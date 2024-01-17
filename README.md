@@ -47,9 +47,18 @@ This is why react became so famous and useful for big applications.
 
 <hr style= "border-top: 1px dotted #ccc;">
 
-# 🎯 Why to use react?
+# 🎯 When should I learn React ?
 
---> efficient and lightweight
+-->
+📌 After mastering JS
+📌 most project don't need react in initial phase
+
+# 🎯 Why to use and learn react?
+
+-->
+📌 efficient and lightweight\
+📌 hype, job, trend, build UI\
+📌 makes easy to manage & build complex front-end
 
 <hr style= "border-top: 1px dotted #ccc;">
 
@@ -73,6 +82,21 @@ happening and a lot of reusable components structure are there.
 
 <hr style= "border-top: 1px dotted #ccc;">
 
-# 🎯 Component
+# 🎯 Topics to learn
 
---> Component is a function that returns jsx.
+📌 core of React (state or UI manipulation, JSX)\
+📌 component reusability\
+📌 Reusing of component (Props)\
+📌 How to propagate change (hooks)
+
+<hr style= "border-top: 1px dotted #ccc;">
+
+# 🎯 Additional Addon to React
+
+📌 Router (React don't have Router)\
+📌 state management (React don't have state management)\
+↘️ Redux, Redux toolkit, zustand, <b>context API</b>\
+📌 class based component\
+↘️ legacy code\
+📌BAAS Apps\
+↘️ social media clone, ecommerce app...
