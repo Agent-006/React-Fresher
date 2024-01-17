@@ -18,10 +18,61 @@ Currently, two official plugins are available:
 
 # ⭐ Learn what matters
 
-🎯 What is react?
-🎯 Why to use react?
-🎯 How to use react?
-🎯 Where to use it?
-🎯 When to use it?
-🎯
+Facebook was facing a problem that they were not able to show the notifications\
+and reactions in real time, to show the notifications and reactions they need to \
+reload the page, they were facing this problem because they were using php earlier.\
+To solve this problem, in 2013 one of the facebook engineer's made a library and this\
+library was special, because this was able to show the data in real time, but the working\
+of this library was different. This doesn't updates the <b>main DOM</b> tree directly, means if \
+there is any change in the page, the DOM tree will <b>not be</b> updated directly. This library\
+has it's own DOM tree named as <b>'Virtual DOM'</b>. This virtual DOM tree is an <b>exact copy</b> of \
+the real/main DOM tree, but there is a difference between them, that is whenever there is\
+a change in the virtual DOM only that part of the page will be changed rather than\
+refreshing the whole page.
 
+This is why react became so famous and useful for big applications.
+
+<hr style= "border-top: 1px dotted #ccc;">
+
+# 🎯 What is react?
+
+--> React is a JavaScript library to maintain the front-end efficiently
+
+⭐ Features and advantages of react
+
+📌 very very very less page reloads\
+📌 extreme use of reusable components\
+📌 very very efficient\
+📌 more opportunities
+
+<hr style= "border-top: 1px dotted #ccc;">
+
+# 🎯 Why to use react?
+
+--> efficient and lightweight
+
+<hr style= "border-top: 1px dotted #ccc;">
+
+# 🎯 How to use react?
+
+📌 create components,\
+📌 and make data if you need it,\
+📌 link the data and change data whenever you want,\
+📌 react will react whenever data is changed.
+
+<hr style= "border-top: 1px dotted #ccc;">
+
+# 🎯 When to use it?
+
+--> Whenever you have to create a generous application where there are lots of things\
+happening and a lot of reusable components structure are there.
+
+<hr style= "border-top: 1px dotted #ccc;">
+
+# ⭐ Build something!!
+
+<hr style= "border-top: 1px dotted #ccc;">
+
+# 🎯 Component
+
+--> Component is a function that returns jsx.
