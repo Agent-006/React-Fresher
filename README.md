@@ -238,5 +238,6 @@ you shouldn't.
         MyApp()
     );
 
+📌 You can go to 'react inner working' commit to see these code.
 
 <hr style="border-top: 1px solid #111;">
