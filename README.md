@@ -165,6 +165,8 @@ they have already added the script tag there and attached the 'main.jsx' which w
 'index.js' previously, to the 'index.html' file. So, there is no need for the 'react-script'\
 package.
 
+🌟 babble (imp)
+
 <hr style="border-top: 1px solid #111;">
 
 ⭐ If you create a component in the raw react(npx create-react-app) there you can give \
@@ -184,15 +186,15 @@ to start the component name with an uppercase letter as these are the best pract
 
 <hr style="border-top: 1px dotted #ccc;">
 
-# 🎯 Creating your own custom react 
+# 🎯 Creating your own custom react
 
 --> Go to the customReact folder. You will see there is an 'index.html' file and a \
 'customreact.js' file(you can name whatever you want). Now go to the 'index.html' \
-file in that file there is only one 'div' with and 'id = root'. 
+file in that file there is only one 'div' with and 'id = root'.
 
 Go to the 'customreact.js' file. What we are doing here is we are creating an object(let's\
 say library) named as reactElement. There are types and arrtibutes they take as an element\
-in HTML. 
+in HTML.
 
 Now, have a function named 'customRender' which takes what to render and where to render. \
 Inside the 'customRender' function we are creating an element and injecting the type, props,\
@@ -226,7 +228,7 @@ you shouldn't.
     );
 
 📝 The function MyApp is a simple function which is returning a jsx. You can run it as shown or\
-    you can run it like MyApp() like a function.
+ you can run it like MyApp() like a function.
 
     import React from "react";
     import ReactDOM from "react-dom/client";
@@ -284,4 +286,60 @@ after all evaluation is written here.
 
 # 🎯 Hooks
 
---> 
+--> Hooks are functions that are used to perform certain tasks. There are many hooks,\
+some of the most popular are:
+
+📌 useState hook - Used to creation and updation of variables in react.\
+
+⭐Exmp:
+
+      import React, { useState } from "react";
+
+      function App() {
+        const [counter, setCounter] = useState(10);
+
+        // let counter = 15;
+
+        const increaseValue = () => {
+          // counter += 1;
+          if (counter < 20) setCounter(counter + 1);
+        };
+
+        const decreaseValue = () => {
+          // counter -= 1;
+          if (counter > 0) setCounter(counter - 1);
+        };
+
+        return (
+          <div className="w-full h-screen bg-zinc-800 text-white text-3xl flex flex-col       items-center justify-center text-left">
+            <h1 className="text-7xl font-bold p-5">Chai aut react</h1>
+            <h2 className="text-5xl font-serif p-5">Counter value: {counter}</h2>
+
+            <div>
+              <button
+                onClick={increaseValue}
+                className="px-6 py-4 bg-zinc-500 mx-1 text-xl rounded-lg border-2 border-zinc-400 hover:border-sky-300 hover:text-sky-300 transition-all duration-500"
+              >
+                Increase value {counter}
+              </button>
+              <button
+                onClick={decreaseValue}
+                className="px-6 py-4 bg-zinc-500 mx-1 text-xl rounded-lg border-2 border-zinc-400 hover:border-sky-300 hover:text-sky-300 transition-all duration-500"
+              >
+                Decrease value {counter}
+              </button>
+            </div>
+
+            <p className="p-5">footer: {counter}</p>
+          </div>
+        );
+      }
+
+      export default App;
+
+📝Note: only the working is important increaseValue and decreaseValue functions, rest are\
+ just tailwind stylings.
+
+📌 useEffect hook - \
+📌 useRef - \
+📌 useCallback -
