@@ -1,9 +1,11 @@
 import React from 'react'
 
+const username = 'hellow dosto!';
+
 function App() {
   return (
     <div>
-      Hellow
+      Hellow {username}
     </div>
   )
 }

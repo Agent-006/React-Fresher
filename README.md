@@ -247,3 +247,37 @@ you shouldn't.
 📌 You can go to 'react inner working' commit to see these code.
 
 <hr style="border-top: 1px solid #111;">
+
+🌟 Expression and Evaluated expressions
+
+--> In javaScript we used to have the template literals like this
+
+    const name = 'Sagar';
+    <h1>My name is: ${name}</h1>
+
+and whatever we use to write between this ${} it was treated as a variable.
+
+Similarly, in react we have something similar,
+
+    import React from 'react'
+
+    const username = 'hellow dosto!';
+
+    function App() {
+      return (
+        <div>
+          Hellow {username}
+        </div>
+      )
+    }
+
+    export default App
+
+Here, we are having a variable username and if want to print the value then we wrap the \
+variable between {} these curly braces. \
+
+📌 Anything between {} these braces are treated as expression and {username} this is known as\
+evaluated expression which means that we don't write whole javascript here but the final outcome\
+after all evaluation is written here.
+
+<hr style="border-top: 1px dotted #ccc;">
