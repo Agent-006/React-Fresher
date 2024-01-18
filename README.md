@@ -281,3 +281,7 @@ evaluated expression which means that we don't write whole javascript here but t
 after all evaluation is written here.
 
 <hr style="border-top: 1px dotted #ccc;">
+
+# 🎯 Hooks
+
+--> 

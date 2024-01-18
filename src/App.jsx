@@ -1,13 +1,9 @@
-import React from 'react'
-
-const username = 'hellow dosto!';
+import React from "react";
 
 function App() {
   return (
-    <div>
-      Hellow {username}
-    </div>
-  )
+  <div>App</div>
+  );
 }
 
-export default App
+export default App;
