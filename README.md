@@ -9,6 +9,12 @@ Currently, two official plugins are available:
 
 <hr style= "border-top: 1px dotted #ccc;">
 
+# 🎯 Reference
+
+Link: 🔗 https://www.youtube.com/watch?v=EaG3Zd04W5s&list=PLbtI3_MArDOkNtOan8BQkG6P8wf6pNVz-&index=39 \
+Link: 🔗 https://www.youtube.com/watch?v=Xe8CkYZvCig&list=PLbtI3_MArDOkNtOan8BQkG6P8wf6pNVz-&index=38 \
+PlayList: 🔗 https://youtu.be/vz1RlUyrc3w?si=bLwgUNz49oW99PMt
+
 # ⭐ React learning
 
 📌 To Code in React\
@@ -50,7 +56,7 @@ This is why react became so famous and useful for big applications.
 # 🎯 When should I learn React ? ✅
 
 -->
-📌 After mastering JS
+📌 After mastering JS\
 📌 most project don't need react in initial phase
 
 # 🎯 Why to use and learn react?
