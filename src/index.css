@@ -14,3 +14,7 @@ html, body{
   min-height: 100vh;
   background-color: black;
 }
+
+::selection{
+  color: rgb(213, 189, 54);
+}

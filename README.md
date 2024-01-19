@@ -375,4 +375,95 @@ updation call for the immediate value update and we can update in chunks.\
 
 # 🎯 Props in React ✅
 
---> 
+--> Props are properties and in react you can pass these props from one to another components.
+
+⭐Exmp: You can pass like this
+
+        <Cards username="Angilina" btnText="Click Me" />
+        <Cards username="Gorginia" btnText="Visit Me" />
+
+Or you can also pass as variables
+
+        const username1 = "Angilina";
+        const username2 = "Gorginia";
+
+        <Cards username= {username1} btnText="Click Me" />
+        <Cards username= {username2} btnText="Visit Me" />
+
+📝 Note: After passing the props to the components you have to handle the props inside the\
+ components.
+
+⚠️ Please config Tailwind before using these components.
+
+        import React from "react";
+
+        function Cards(props) {
+          return (
+            <div className="relative h-[400px] w-[300px] rounded-md m-2">
+              <img
+                src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&        ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+                alt="AirMax Pro"
+                className="z-0 h-full w-full rounded-md object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 text-left">
+                <h1 className="text-lg font-semibold text-white">{props.username}</h1>
+                <p className="mt-2 text-sm text-gray-300">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                  debitis?
+                </p>
+                <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold         text-white">
+                  {props.btnText} &rarr;
+                </button>
+              </div>
+            </div>
+          );
+        }
+
+        export default Cards;
+
+We can accept the props in the function parameter and then as it is an object so we have to use\
+it like {props.username} , {props.btnText} like this. This is the original syntax.
+
+🌟 You can use the destructuring method and use it like this,
+
+⭐Exmp:
+
+      import React from "react";
+
+      function Cards({username, btnText}) {
+        return (
+          <div className="relative h-[400px] w-[300px] rounded-md m-2">
+            <img
+              src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&      ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+              alt="AirMax Pro"
+              className="z-0 h-full w-full rounded-md object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+            <div className="absolute bottom-4 left-4 text-left">
+              <h1 className="text-lg font-semibold text-white">{username}</h1>
+              <p className="mt-2 text-sm text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                debitis?
+              </p>
+              <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+                {btnText} &rarr;
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      export default Cards;
+
+You can also set a defalut value for the porps if incase the value is not passed.
+
+      function Cards({btnText="visit me!"}) {
+        return (
+          <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+            {btnText} &rarr;
+          </button>
+        )
+      }
+
+<hr style="border-top: 1px dotted #ccc;">
