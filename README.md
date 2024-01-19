@@ -132,7 +132,7 @@ This is the fastest and most efficient way to create your react app.
 
 <hr style= "border-top: 1px dotted #ccc;">
 
-# 🎯 Understanding react flow and structure
+# 🎯 Understanding react flow and structure ✅
 
 --> React is a Single Page Application(SPA) library.
 
@@ -186,7 +186,7 @@ to start the component name with an uppercase letter as these are the best pract
 
 <hr style="border-top: 1px dotted #ccc;">
 
-# 🎯 Creating your own custom react
+# 🎯 Creating your own custom react ✅
 
 --> Go to the customReact folder. You will see there is an 'index.html' file and a \
 'customreact.js' file(you can name whatever you want). Now go to the 'index.html' \
@@ -284,7 +284,7 @@ after all evaluation is written here.
 
 <hr style="border-top: 1px dotted #ccc;">
 
-# 🎯 Hooks
+# 🎯 Hooks ✅
 
 --> Hooks are functions that are used to perform certain tasks. There are many hooks,\
 some of the most popular are:
@@ -343,3 +343,36 @@ some of the most popular are:
 📌 useEffect hook - \
 📌 useRef - \
 📌 useCallback -
+
+<hr style="border-top: 1px dotted #ccc;">
+
+# 🎯 Virtual DOM, Fibre and reconciliation ✅
+
+--> Go to this link for the theory part:
+
+Best source: 🔗 https://github.com/acdlite/react-fiber-architecture \
+Video explanation: 🔗 https://www.youtube.com/watch?v=MPCVGFvgVEQ&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=7
+
+🔑 Key points:
+
+📌 The createRoot creates its own DOM tree (Virtual DOM) and then compare it with the web\
+ browser's DOM tree (Real DOM) and only updates those components which are actually updated.\
+📌 <b>Reload:</b> The browser creates a DOM tree (Real DOM) and whenever there is an update the browser \
+creates a completely new DOM tree with all the updates and re-renders the whole DOM tree, which\
+is seen as the reload of the page.\
+📌 In Virtual DOM, it checks the whole DOM tree and only updates the nodes(components/element/\
+state) rather than updating the whole DOM tree.\
+📌 In the values depends upon network calls then updating rapidly may give lags so, we can drop the\
+updation call for the immediate value update and we can update in chunks.\
+📌 The current algo used by React is the React Fibre algo.\
+📌 Reconciliation is the algorithm behind what is popularly understood as the "virtual DOM.\
+📌 <b>Reconciliation:</b> The algorithm React uses to diff one tree with another to determine which\
+ parts need to be changed.\
+📌 <b>update:</b> A change in the data used to render a React app. Usually the result of\
+ `setState`. Eventually results in a re-render.
+
+<hr style="border-top: 1px dotted #ccc;">
+
+# 🎯 Props in React ✅
+
+--> 
