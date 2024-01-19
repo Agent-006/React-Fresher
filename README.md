@@ -276,7 +276,7 @@ Similarly, in react we have something similar,
     export default App
 
 Here, we are having a variable username and if want to print the value then we wrap the \
-variable between {} these curly braces. \
+variable between {} these curly braces. 
 
 📌 Anything between {} these braces are treated as expression and {username} this is known as\
 evaluated expression which means that we don't write whole javascript here but the final outcome\
@@ -289,7 +289,7 @@ after all evaluation is written here.
 --> Hooks are functions that are used to perform certain tasks. There are many hooks,\
 some of the most popular are:
 
-📌 useState hook - Used to creation and updation of variables in react.\
+📌 useState hook - Used to creation and updation of variables in react.
 
 ⭐Exmp:
 
@@ -344,6 +344,9 @@ some of the most popular are:
 📌 useRef - \
 📌 useCallback -
 
+
+📌 Can go to counter project 'end' commit for the code.
+
 <hr style="border-top: 1px dotted #ccc;">
 
 # 🎯 Virtual DOM, Fibre and reconciliation ✅
@@ -371,6 +374,8 @@ updation call for the immediate value update and we can update in chunks.\
 📌 <b>update:</b> A change in the data used to render a React app. Usually the result of\
  `setState`. Eventually results in a re-render.
 
+🌟 You can go to Virtual DOM, Fibre and reconciliation commit for code.
+
 <hr style="border-top: 1px dotted #ccc;">
 
 # 🎯 Props in React ✅
@@ -393,7 +398,7 @@ Or you can also pass as variables
 📝 Note: After passing the props to the components you have to handle the props inside the\
  components.
 
-⚠️ Please config Tailwind before using these components.
+⚠️ <b>Please config Tailwind before using these components.<b/>
 
         import React from "react";
 
@@ -465,5 +470,7 @@ You can also set a defalut value for the porps if incase the value is not passed
           </button>
         )
       }
+
+📌 You can go to Props in React commit for code.
 
 <hr style="border-top: 1px dotted #ccc;">
