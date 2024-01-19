@@ -276,7 +276,7 @@ Similarly, in react we have something similar,
     export default App
 
 Here, we are having a variable username and if want to print the value then we wrap the \
-variable between {} these curly braces. 
+variable between {} these curly braces.
 
 📌 Anything between {} these braces are treated as expression and {username} this is known as\
 evaluated expression which means that we don't write whole javascript here but the final outcome\
@@ -340,10 +340,103 @@ some of the most popular are:
 📝Note: only the working is important increaseValue and decreaseValue functions, rest are\
  just tailwind stylings.
 
+🌟 <b>Interview Question</b>
+
+If we call the setCounter function multiple times what will be the output ?
+
+      import React, { useState } from "react";
+
+      function App() {
+        const [counter, setCounter] = useState(10);
+
+        const increaseValue = () => {
+          // like this
+          setCounter(counter + 1);
+          setCounter(counter + 1);
+          setCounter(counter + 1);
+          setCounter(counter + 1);
+        };
+
+        const decreaseValue = () => {
+          setCounter(counter - 1);
+        };
+
+        return (
+          <div className="w-full h-screen bg-zinc-800 text-white text-3xl flex flex-col       items-center justify-center text-left">
+            <h1 className="text-7xl font-bold p-5">Chai aut react</h1>
+            <h2 className="text-5xl font-serif p-5">Counter value: {counter}</h2>
+
+            <div>
+              <button
+                onClick={increaseValue}
+                className="px-6 py-4 bg-zinc-500 mx-1 text-xl rounded-lg border-2 border-zinc-400 hover:border-sky-300 hover:text-sky-300 transition-all duration-500"
+              >
+                Increase value {counter}
+              </button>
+              <button
+                onClick={decreaseValue}
+                className="px-6 py-4 bg-zinc-500 mx-1 text-xl rounded-lg border-2 border-zinc-400 hover:border-sky-300 hover:text-sky-300 transition-all duration-500"
+              >
+                Decrease value {counter}
+              </button>
+            </div>
+
+            <p className="p-5">footer: {counter}</p>
+          </div>
+        );
+      }
+
+      export default App;
+
+By seeing the code you may think that it will update the value by 4, but it will not. The value\
+will be get updated only ones because as fiber will think that it is the same change we are \
+making therefore it will bundle the change in one and make it which will result in only +1 \
+value.
+
+To solve this we can either use the updater function incase you have to update like this, so it\
+fiber will put in a queue and execute it; or you can simply use logic setCounter(counter + 4)
+
+    import React, { useState } from "react";
+
+    function App() {
+      const [counter, setCounter] = useState(10);
+      const increaseValue = () => {
+        // like this
+        setCounter(prevCounter => prevCounter + 1);
+        setCounter(prevCounter => prevCounter + 1);
+        setCounter(prevCounter => prevCounter + 1);
+        setCounter(prevCounter => prevCounter + 1);
+      };
+      const decreaseValue = () => {
+        setCounter(counter - 1);
+      };
+      return (
+        <div className="w-full h-screen bg-zinc-800 text-white text-3xl flex flex-col       items-centerjustify-center text-left">
+          <h1 className="text-7xl font-bold p-5">Chai aut react</h1>
+          <h2 className="text-5xl font-serif p-5">Counter value: {counter}</h2>
+          <div>
+            <button
+              onClick={increaseValue}
+              className="px-6 py-4 bg-zinc-500 mx-1 text-xl rounded-lg border-2 border-zinc-400hover:border-sky-300 hover:text-sky-300 transition-all duration-500"
+            >
+              Increase value {counter}
+            </button>
+            <button
+              onClick={decreaseValue}
+              className="px-6 py-4 bg-zinc-500 mx-1 text-xl rounded-lg border-2 border-zinc-400hover:border-sky-300 hover:text-sky-300 transition-all duration-500"
+            >
+              Decrease value {counter}
+            </button>
+          </div>
+          <p className="p-5">footer: {counter}</p>
+        </div>
+      );
+    }
+    export default App;
+
 📌 useEffect hook - \
 📌 useRef - \
 📌 useCallback -
-
 
 📌 Can go to counter project 'end' commit for the code.
 
@@ -368,7 +461,7 @@ state) rather than updating the whole DOM tree.\
 📌 In the values depends upon network calls then updating rapidly may give lags so, we can drop the\
 updation call for the immediate value update and we can update in chunks.\
 📌 The current algo used by React is the React Fibre algo.\
-📌 Reconciliation is the algorithm behind what is popularly understood as the "virtual DOM.\
+📌 Reconciliation is the algorithm behind what is popularly understood as the "virtual DOM".\
 📌 <b>Reconciliation:</b> The algorithm React uses to diff one tree with another to determine which\
  parts need to be changed.\
 📌 <b>update:</b> A change in the data used to render a React app. Usually the result of\
@@ -398,7 +491,7 @@ Or you can also pass as variables
 📝 Note: After passing the props to the components you have to handle the props inside the\
  components.
 
-⚠️ <b>Please config Tailwind before using these components.<b/>
+⚠️ <b>Please config Tailwind before using these components.</b>
 
         import React from "react";
 
@@ -474,3 +567,15 @@ You can also set a defalut value for the porps if incase the value is not passed
 📌 You can go to Props in React commit for code.
 
 <hr style="border-top: 1px dotted #ccc;">
+
+# 🎯 Building a react project | bgChanger ✅
+
+git-repo: 🔗 https://github.com/Agent-006/bg-changer
+
+![Project View](./src//assets//Screenshot%202024-01-19%20231125.png)
+
+<hr style="border-top: 1px dotted #ccc;">
+
+# 🎯 useEffect, useRef and useCallback ✅
+
+--> 
