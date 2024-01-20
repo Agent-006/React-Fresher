@@ -581,3 +581,75 @@ git-repo: 🔗 https://github.com/Agent-006/bg-changer
 git-repo: 🔗 https://github.com/Agent-006/password-generator
 
 live on: 🔗 https://password-generator-agent-006.vercel.app/
+
+<hr style="border-top: 1px dotted #ccc;">
+
+# 🎯 Custom hooks in react | currency Project ✅
+
+git-repo: 🔗 https://github.com/Agent-006/currency-converter
+
+live on: 🔗 https://currency-converter-agent-006.vercel.app/
+
+<hr style="border-top: 1px dotted #ccc;">
+
+# 🎯 React router ✅
+
+Reference taken from pfficial documentation link: 🔗 https://reactrouter.com/en/main/start/overview#client-side-routing
+
+<b>🌟Client Side Routing</b>\
+React Router enables "client side routing".
+
+In traditional websites, the browser requests a document from a web server, downloads and evaluates\
+CSS and JavaScript assets, and renders the HTML sent from the server. When the user clicks a link, it\
+starts the process all over again for a new page.
+
+Client side routing allows your app to update the URL from a link click without making another request\
+for another document from the server. Instead, your app can immediately render some new UI and\
+make data requests with `fetch` to update the page with new information.
+
+This enables faster user experiences because the browser doesn't need to request an entirely\
+new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more\
+dynamic user experiences with things like animation.
+
+Client side routing is enabled by creating a `Router` and linking/submitting to pages with `Link` and `<Form>`:
+
+    import * as React from "react";
+    import { createRoot } from "react-dom/client";
+    import {
+      createBrowserRouter,
+      RouterProvider,
+      Route,
+      Link,
+    } from "react-router-dom";
+
+    const router = createBrowserRouter([
+      {
+        path: "/",
+        element: ( {/*It is always a good idea to make this element a component and import it here*/}
+          <div>
+            <h1>Hello World</h1>
+            <Link to="about">About Us</Link>
+          </div>
+        ),
+      },
+      {
+        path: "about",
+        element: <div>About</div>,
+      },
+    ]);
+
+    createRoot(document.getElementById("root")).render(
+      <RouterProvider router={router} />
+    );
+
+📝 I highly suggest you to go through the docs for best understanding and for live application\
+you can access my git-repo
+
+git-repo link: 🔗 https://github.com/Agent-006/react-router
+
+complete video explanation: 🔗 https://youtu.be/VJov5QWEKE4?si=8EsFgopJP24e3vzu
+
+<hr style="border-top: 1px dotted #ccc;">
+
+# 🎯 Context API ✅
+
