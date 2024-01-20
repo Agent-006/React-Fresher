@@ -576,6 +576,8 @@ git-repo: 🔗 https://github.com/Agent-006/bg-changer
 
 <hr style="border-top: 1px dotted #ccc;">
 
-# 🎯 useEffect, useRef and useCallback ✅
+# 🎯 useEffect, useRef and useCallback with project ✅
 
---> 
+git-repo: 🔗 https://github.com/Agent-006/password-generator
+
+live on: 🔗 https://password-generator-agent-006.vercel.app/
