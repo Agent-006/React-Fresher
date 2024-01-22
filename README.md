@@ -653,3 +653,52 @@ complete video explanation: 🔗 https://youtu.be/VJov5QWEKE4?si=8EsFgopJP24e3vz
 
 # 🎯 Context API ✅
 
+--> Context API was introduced to solve the state management problem in react. Previously the states were passed through many components for to access in a nested component. This is what is generally known as "prop drilling". The issue was that, even though many nested components were not using those states/data they have to handle the data only to pass it to the next component. It was very confusing for the developer to actually remember and know the data flow for big projects and it was also not an efficient way to do things.
+
+To solve this they introduced the Context API where developer can setup a state/data on the global level and any component (only which needs) can access it whenever and from wherever required.
+
+# <b style="font-size: 18px;">⭐ Setup for Context API</b>
+
+There are two ways or let's say two different styles of using the Context API and this notes covers both. So I will go one by one:
+
+# <b style="font-size: 16px;">🌟 First method</b>
+
+So, this is the basic one, in react.dev docs there is no setup guide so you may follow the following steps.
+
+🪜 Steps to follow:
+
+<b style="border-bottom: 1px solid white;">Step 1 :</b> Create a folder in the `src` folder and name it `contexts`.
+
+![Folder name](./src/assets/Screenshot%202024-01-22%20000332.png)
+
+📝Note: The filename will be depending upon your requirement (from next step). Doesn't have to be the same as mine.
+
+<b style="border-bottom: 1px solid white;">Step 2 :</b> Create a file inside the `contexts` folder and name it `UserContext.js`. Create a context with `createContext()` function and store it in a variable let's say `UserContext` and export it.
+
+![UserContext.js](./src/assets/Screenshot%202024-01-22%20000412.png)
+
+Now, since we have created a <b>context</b>, how the other files will use and access that context ?\
+For that we have to create a <b>context provider</b>. Follow the next step to do so.
+
+<b style="border-bottom: 1px solid white;">Step 3 :</b> Create another file inside the `contexts` folder and name it `UserContextProvider.jsx`. Now we have to create a <b>context provider</b> and wrap the children. Use `.Provider` to do so like `UserContext.Provider`. We also have to create the states that we want to give access to and pass them as props inside `value={}`. and export the file.
+
+![UserContextProvider.jsx](./src/assets/Screenshot%202024-01-22%20000743.png)
+
+<b style="border-bottom: 1px solid white;">Step 4 :</b> Now go to the App.jsx (you can go main.jsx also) and wrap the components with `UserContextProvider` and you will have the access to all the states.
+
+![App.jsx](./src/assets/Screenshot%202024-01-22%20000830.png)
+
+Now, the basic setup for the context api is done and the below steps are to guide you how to access and use those states/values etc.
+
+<b style="border-bottom: 1px solid white;">Step 5 :</b> We have two components `Login.jsx` and `Profile.jsx`. Go to the `Login.jsx` and can follow the code. Here we have `useContext()` hook for using the context that we have created. The `setUser` is the function that we are getting from our context API `UserContext`.
+
+![Login.jsx](./src/assets/Screenshot%202024-01-22%20001330.png)
+
+<b style="border-bottom: 1px solid white;">Step 5 :</b> Go to the `Profile.jsx` and can follow the code. Here we are getting the value `user` from our `UserContext`. We can use the `user` value as shown.
+
+![Profile.jsx](./src/assets/Screenshot%202024-01-22%20001357.png)
+
+<hr style="border-top: 1px dotted #ccc;">
+
+# <b style="font-size: 16px;">🌟 Second method</b>
+
