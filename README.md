@@ -59,6 +59,8 @@ This is why react became so famous and useful for big applications.
 📌 After mastering JS\
 📌 most project don't need react in initial phase
 
+<hr style="border-top: 1px dotted #ccc;">
+
 # 🎯 Why to use and learn react?
 
 -->
@@ -99,12 +101,12 @@ happening and a lot of reusable components structure are there.
 
 # 🎯 Additional Addon to React ✅
 
-📌 Router (React don't have Router)\
-📌 state management (React don't have state management)\
-↘️ Redux, Redux toolkit, zustand, <b>context API</b>\
-📌 class based component\
-↘️ legacy code\
-📌BAAS Apps\
+📌 Router (React don't have Router).\
+📌 state management (React don't used to have state management).\
+↘️ Redux, Redux toolkit, zustand, <b>only context API comes with react now</b>.\
+📌 class based component.\
+↘️ legacy code.\
+📌BAAS Apps.\
 ↘️ social media clone, ecommerce app...
 
 <hr style= "border-top: 1px dotted #ccc;">
@@ -739,8 +741,6 @@ Reducers are functions that take the current `state` and an `action` as argument
 # <b style="font-size: 16px;">⭐ useDispatch:</b>
 
     const dispatch = useDispatch();
-
-<hr style="border-top: 1px dotted #ccc;">
 
 You may refer to this repository for complete setup.
 
