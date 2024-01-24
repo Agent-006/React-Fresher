@@ -702,3 +702,50 @@ Now, the basic setup for the context api is done and the below steps are to guid
 
 # <b style="font-size: 16px;">🌟 Second method</b>
 
+<!-- to be done -->
+
+<hr style="border-top: 1px dotted #ccc;">
+
+# 🎯 Redux toolkit ✅
+
+Redux itself is a state management library. It have two branches:
+
+📌 <b style="border-bottom: 1px solid white; font-size: 14px;">React-Redux</b> - It is an official react buildings for redux.
+
+📌 <b style="border-bottom: 1px solid white; font-size: 14px;">Redux-ToolKit (RTK)</b> - It is the official, opinionated, batteries-included toolset for efficient Redux development .
+
+# <b style="font-size: 16px;">⭐ Store:</b>
+
+A store holds the whole state tree of your application. The only way to change the state inside it is to dispatch an action on it, which triggers the root reducer function to calculate the new state.
+
+A store is not a class. It's just an object with a few methods on it.
+
+<b>To create a store, pass your root reducer function</b> to Redux Toolkit's `configureStore` <b>method</b>, which will set up a Redux store with a good default configuration. (Alternately, if you're not yet using Redux Toolkit, you can use the original `createStore` method, but we encourage you to migrate your code to use Redux Toolkit as soon as possible)
+
+Every application must have only one store and it is also know as 'single source of truth'.
+
+# <b style="font-size: 16px;">⭐ Reducers:</b>
+
+Reducers are functions that take the current `state` and an `action` as arguments, and return a new `state` result. In other words, `(state, action) => newState`.
+
+    export const store = configureStore({
+    reducer: todoReducer,
+    })
+
+# <b style="font-size: 16px;">⭐ useSelector:</b>
+
+    const todos = useSelector((state) => state.todos);
+
+# <b style="font-size: 16px;">⭐ useDispatch:</b>
+
+    const dispatch = useDispatch();
+
+<hr style="border-top: 1px dotted #ccc;">
+
+You may refer to this repository for complete setup.
+
+📌 <b style="border-bottom: 1px solid white">git-repo:</b> 🔗 https://github.com/Agent-006/redex-toolkit
+
+📌 <b style="border-bottom: 1px solid white;">video-guide:</b> 🔗 https://youtu.be/1i04-A7kfFI?si=daz3h_lyQnOQldEr
+
+<hr style="border-top: 1px dotted #ccc;">
